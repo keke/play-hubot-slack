@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker build -t test/test:v_$CIRCLE_BUILD_NUM .
-    - docker save circleci/elasticsearch > $CIRCLE_ARTIFACTS/image.tar
+    - docker save test/test:v_$CIRCLE_BUILD_NUM > $CIRCLE_ARTIFACTS/image_v_$CIRCLE_BUILD_NUM.tar
 test:
   override:
     - ls
