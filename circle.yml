@@ -4,8 +4,8 @@ machine:
 
 dependencies:
   override:
-    - docker build -t test/test:v_$CIRCLE_BUILD_NUM .
-    - docker save test/test:v_$CIRCLE_BUILD_NUM > $CIRCLE_ARTIFACTS/image_v_$CIRCLE_BUILD_NUM.tar
+    - docker build -t keke/test:v_$CIRCLE_BUILD_NUM .
+    - docker save keke/test:v_$CIRCLE_BUILD_NUM > $CIRCLE_ARTIFACTS/image_v_$CIRCLE_BUILD_NUM.tar
 test:
   override:
     - ls
