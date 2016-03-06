@@ -19,5 +19,10 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "hubot --name testhbot --adapter slack",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy"
   }
 }

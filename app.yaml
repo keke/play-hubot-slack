@@ -1,0 +1,10 @@
+runtime: nodejs
+vm: true
+
+skip_files:
+  - ^(.*/)?.*/node_modules/.*$
+
+env_variables:
+  ADAPTER: slack
+  BOT_NAME: testhbot
+  HUBOT_SLACK_TOKEN: xoxb-24639993351-YDhl2BDZgjOUKXtq83wXhsFl
