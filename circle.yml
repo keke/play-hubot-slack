@@ -15,4 +15,4 @@ deployment:
     branch: [master, linkwithslack, docker]
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push test/test
+      - docker push keke/test:v_$CIRCLE_BUILD_NUM
