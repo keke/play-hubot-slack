@@ -1,2 +1,2 @@
-1. Deploy on Google Cloud
-1. Link with Slack team site
+1. Build a docker image
+1. Deploy on AWS
